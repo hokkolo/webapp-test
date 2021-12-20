@@ -17,7 +17,7 @@ steps:
 - task: AzureStaticWebApp@0
   inputs:
     app_location: '/webappfiles'
-    azure_static_web_apps_api_token: $(token)
+    azure_static_web_apps_api_token: $(token_git)
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(Build.BinariesDirectory)'
