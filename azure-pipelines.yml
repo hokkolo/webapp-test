@@ -13,11 +13,11 @@ pool:
 steps:
 - checkout: self
   submodules: true
+
 - task: AzureStaticWebApp@0
   inputs:
     app_location: '/webappfiles'
-    azure_static_web_apps_api_token: $(deployment)
-
+    azure_static_web_apps_api_token: '2m763pyls2zkoamiy4ontyocpuifengpei6q5a63vldipcr4h5fa'
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(Build.BinariesDirectory)'
